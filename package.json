@@ -1,6 +1,6 @@
 {
   "name": "submissions",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "stream of submission events for form controls",
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
