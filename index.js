@@ -35,6 +35,7 @@ function validClicks(ancestor, elems) {
 
     return filter(clicks, function (ev) {
         var target = ev.target
+        // console.log("click?", ev)
 
         return elems.indexOf(target) > -1 &&
             target.tagName === "BUTTON"
@@ -46,6 +47,7 @@ function validPresses(ancestor, elems) {
 
     return filter(keypresses, function (ev) {
         var target = ev.target
+        // console.log("keypress?", ev)
 
         var validEvent = elems.indexOf(target) > -1
         validEvent = validEvent && (
