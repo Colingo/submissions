@@ -25,7 +25,7 @@
   "devDependencies": {
     "tape": "~0.2.2",
     "browserify-server": "~2.1.18",
-    "browservefy": "~0.0.7",
+    "browservefy": "0.0.8",
     "testem": "~0.2.70",
     "reducible": "git://github.com/Raynos/reducible#1.x",
     "global": "~0.1.5",
