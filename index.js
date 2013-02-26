@@ -19,15 +19,33 @@ function submissions(elements) {
         return
     }
 
-    return map(merge([
+    var validEvents = merge([
         validClicks(ancestor, elems)
         , validPresses(ancestor, elems)
-    ]), getFormData)
+    ])
+
+    var formData = map(validEvents, getFormData)
+
+    return filter(formData, isNonEmpty)
 
     function getFormData(ev) {
         ev.preventDefault()
         return FormData(elements)
     }
+}
+
+function isNonEmpty(hash) {
+    return Object.keys(hash).every(function (key) {
+        var value = hash[key]
+
+        if (typeof value === "string" && value.length === 0) {
+            return false
+        } else if (value === undefined || value === null) {
+            return false
+        } else {
+            return true
+        }
+    })
 }
 
 function validClicks(ancestor, elems) {
