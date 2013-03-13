@@ -20,7 +20,7 @@
     "dom-reduce": "git://github.com/Raynos/dom-reduce",
     "reducers": "git://github.com/Raynos/reducers",
     "common-ancestor": "~0.1.2",
-    "form-data-set": "~0.1.2"
+    "form-data-set": "~0.2.1"
   },
   "devDependencies": {
     "tape": "~0.2.2",
@@ -30,10 +30,10 @@
     "reducible": "git://github.com/Raynos/reducible#1.x",
     "global": "~0.1.5",
     "ever": "0.0.1",
-    "unpack-html": "~1.0.3"
-  },
-  "peerDependencies": {
-    "reducible": "git://github.com/Raynos/reducible#1.x"
+    "unpack-html": "~1.0.3",
+    "eve": "git://github.com/shtylman/eve",
+    "happen": "~0.1.2",
+    "hyperscript": "~1.0.1"
   },
   "licenses": [
     {
@@ -49,36 +49,17 @@
   },
   "testling": {
     "files": "test/index.js",
-    "browsers": {
-      "ie": [
-        "8",
-        "9",
-        "10"
-      ],
-      "firefox": [
-        "16",
-        "17",
-        "nightly"
-      ],
-      "chrome": [
-        "22",
-        "23",
-        "canary"
-      ],
-      "opera": [
-        "12",
-        "next"
-      ],
-      "safari": [
-        "5.1",
-        "6.0"
-      ],
-      "ipad": [
-        "6.0"
-      ],
-      "iphone": [
-        "6.0"
-      ]
-    }
+    "browsers": [
+      "ie/8..latest",
+      "firefox/16..latest",
+      "firefox/nightly",
+      "chrome/22..latest",
+      "chrome/canary",
+      "opera/12..latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest"
+    ]
   }
 }

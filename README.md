@@ -2,6 +2,8 @@
 
 [![dependency status][3]][4]
 
+[![browser support][5]][6]
+
 stream of submission events for form controls
 
 ## Example

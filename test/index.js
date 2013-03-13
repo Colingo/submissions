@@ -1,0 +1,5 @@
+require("./select")
+require("./input")
+require("./nested-object")
+require("./many-inputs")
+require("./radio")
